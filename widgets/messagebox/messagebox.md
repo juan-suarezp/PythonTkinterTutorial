@@ -23,26 +23,26 @@ class Example(tk.Frame): #Ventana principal
         self.pack()
 
         #Botones con su respectiva función
-        error = tk.Button(self, text="Error", command=self.onError)
+        error = tk.Button(self, text="Error", command=self.Error)
         error.grid(padx=5, pady=5)
-        warning = tk.Button(self, text="Warning", command=self.onWarn)
+        warning = tk.Button(self, text="Warning", command=self.Warn)
         warning.grid(row=1, column=0)
-        question = tk.Button(self, text="Question", command=self.onQuest)
+        question = tk.Button(self, text="Question", command=self.Quest)
         question.grid(row=0, column=1)
-        inform = tk.Button(self, text="Information", command=self.onInfo)
+        inform = tk.Button(self, text="Information", command=self.Info)
         inform.grid(row=1, column=1)
 
 
-    def onError(self):
+    def Error(self):
         tk.messagebox.showerror("Error", "Could not open file")
 
-    def onWarn(self):
+    def Warn(self):
         tk.messagebox.showwarning("Warning", "Deprecated function call")
 
-    def onQuest(self):
+    def Quest(self):
         tk.messagebox.askquestion("Question", "Are you sure to quit?")
 
-    def onInfo(self):
+    def Info(self):
         tk.messagebox.showinfo("Information", "Download completed")
 
 
@@ -60,7 +60,7 @@ El resultado es el siguiente:
 
 ![ventana messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/ventanamessagebox.png)
 
-En este ejemplo se crea una clase para la interfaz, en la cual se definen cuatro botones (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), error, warning, question e inform; conectados a los métodos `onError`, `onWarn`, `onQuest` y `onInfo` respectivamente. Cada uno de estos métodos abre una ventana predeterminada de `tk.messagebox` diferente, así:
+En este ejemplo se crea una clase para la interfaz, en la cual se definen cuatro botones (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), error, warning, question e inform; conectados a los métodos `Error`, `Warn`, `Quest` y `Info` respectivamente. Cada uno de estos métodos abre una ventana predeterminada de `tk.messagebox` diferente, así:
 
 ![funcion messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/funcionmessagebox.png)
 
