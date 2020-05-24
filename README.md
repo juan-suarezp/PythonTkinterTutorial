@@ -110,7 +110,7 @@ Tkinter cuenta con un gran número de widgets, a continuación están listados l
 - [Menu.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)
 - [Menubutton.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menubutton/menubutton.md)
 - [Message.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/message/message.md)
-- [MessageboxP.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/messagebox.md)
+- [Messagebox.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/messagebox.md)
 - [Notebook.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/notebook/notebook.md)
 - [Panedwindow.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/panedwindow/panedwindow.md)
 - [Progressbar.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/progressbar/progressbar.md)
