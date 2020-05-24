@@ -99,7 +99,7 @@ Tkinter cuenta con un gran número de widgets, a continuación están listados l
 - [Button.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)
 - [Canvas.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/canvas/canvas.md)
 - [Checkbutton.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/checkbutton/checkbutton.md)
-- [ColorchooserP.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/colorchooser/colorchooser.md)
+- [Colorchooser.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/colorchooser/colorchooser.md)
 - [Combobox.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/combobox/combobox.md)
 - [Entry.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/entry.md)
 - [FiledialogP.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/filedialog.md)
