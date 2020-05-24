@@ -68,7 +68,7 @@ El resultado es el siguiente:
 
 ![ventana filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/ventanafiledialog.png)
 
-En este ejemplo se crea una clase para la interfaz, en la cual se define un menú (ver [Tkinter Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)) con una sola opción que está conectada al método `Abrir` y un text (ver [Tkinter Text](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md)) en el que se mostrará la ruta y el texto que contiene el archivo seleccionado. Por ejemplo, si se selecciona el mismo archivo .py del ejemplo el resultado es el siguiente:
+En este ejemplo se crea una clase para la interfaz, en la cual se define un menú (ver [Tkinter Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)) con una sola opción que está conectada al método `Abrir` y un text (ver [Tkinter Text](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md)) en el que se mostrará la ruta y el texto que contiene el archivo seleccionado. Por ejemplo, si se selecciona el archivo .py del ejemplo el resultado es el siguiente:
 
 ![funcion filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/funcionfiledialog.png)
 
