@@ -1,5 +1,5 @@
 # Tkinter Colorchooser
-Crea un dialogo que permite elegir un color y retorna su código en RGB y hexadecimal.
+Crea una ventana que permite elegir un color y retorna su código en RGB y hexadecimal.
 
 ## Ejemplo
 
@@ -47,7 +47,13 @@ def main():
 
 if __name__ == '__main__':
     main()
- ```
- El resultado es el siguiente:
+```
+El resultado es el siguiente:
+
+![ventana colorchooser](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/colorchooser/ventanacolorchooser.png)
  
- ![ventana colorchooser](
+En este ejemplo se crea una clase para la interfaz, en la cual se define un botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que está conectado al método `onChoose` y un frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)) que va a mostrar el color elegido, así:
+
+![funcion colorchooser](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/colorchooser/funcioncolorchooser.png)
+
+El método `onChoose` abre una ventana predeterminada de Tkinter que permite seleccionar un color. Esta ventana se abre con `tkinter.colorchooser.askcolor` y retorna el código del color en RGB y en hexadecimal. Luego con el código en hexadecimal configura el frame para mostrar el color seleccionado.
