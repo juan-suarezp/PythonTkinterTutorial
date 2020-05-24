@@ -48,7 +48,7 @@ El resultado es el siguiente:
 
 ![ventana checkbutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/checkbutton/ventanacheckbutton.png)
 
-El botón está conectado a la función `accion` (Ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), al igual que los checkbutton al cambiar de estado. La función muestra en la terminal el estado actual de los dos checkbutton como se observa a continuación:
+El botón está conectado a la función `accion` (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), al igual que los checkbutton al cambiar de estado. La función muestra en la terminal el estado actual de los dos checkbutton como se observa a continuación:
 
 ![funcion checkbutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/checkbutton/funcioncheckbutton.png)
 
