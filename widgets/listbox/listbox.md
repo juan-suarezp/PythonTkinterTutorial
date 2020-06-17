@@ -12,6 +12,14 @@ Ejemplo de ventana básico con listbox
 #Importamos las librerías necesarias
 import tkinter as tk
 
+def mostrar():
+    #Verifica si hay algún elemento seleccionado y lo muestra
+    if len(listbox.curselection()) != 0:
+        seleccion=''
+        for ind in listbox.curselection():
+            seleccion = seleccion+listbox.get(ind)+"\n"
+        print(seleccion)
+
 ventana = tk.Tk() #Crea la ventana principal
 
 #Se crea un frame
@@ -32,14 +40,6 @@ for i in range(20):
     listbox.insert(i, "Elemento {}".format(i))
 
 listbox.pack()
-
-def mostrar():
-    #Verifica si hay algún elemento seleccionado y lo muestra
-    if len(listbox.curselection()) != 0:
-        seleccion=''
-        for ind in listbox.curselection():
-            seleccion = seleccion+listbox.get(ind)+"\n"
-        print(seleccion)
         
 #Se crea un botón y se conecta con la función
 boton = tk.Button(ventana,text="Mostrar selección",command=mostrar)
