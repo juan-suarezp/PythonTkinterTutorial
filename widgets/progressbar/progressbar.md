@@ -13,14 +13,14 @@ Ejemplo de ventana básico con progressbar
 import tkinter as tk
 from tkinter import ttk
 
+def aumentar(): #Aumenta 20% de la barra de progreso
+    progressbar.step(19.99999999)
+
 ventana = tk.Tk() #Ventana principal
 
 progressbar = ttk.Progressbar(orient=tk.HORIZONTAL) #Barra de progreso
 progressbar.pack()
 #Cuando llega al 100% se reinicia
-
-def aumentar(): #Aumenta 20% de la barra de progreso
-    progressbar.step(19.99999999)
     
 boton = tk.Button(text = "Aumentar", command = aumentar) #Botón
 boton.pack()
