@@ -12,13 +12,6 @@ Ejemplo de ventana básico con canvas para dibujar
 #Importamos las librerías necesarias
 import tkinter as tk
 
-ventana = tk.Tk() #Crea la ventana principal
-ventana.geometry("500x500") #Tamaño de la ventana en pixeles
-
-#Espacio para dibujar
-canvas = tk.Canvas(ventana,bd = 10,bg ="black")
-canvas.pack()
-
 def accionArc():
     #Dibuja un arco
     canvas.create_arc(10,10,250,250, start = 0, extent = 150, fill = "blue")
@@ -26,7 +19,14 @@ def accionArc():
 def accionLine():
     #Dibuja una línea
     canvas.create_line(20,20,250,250,fill = "white")
-    
+
+ventana = tk.Tk() #Crea la ventana principal
+ventana.geometry("500x500") #Tamaño de la ventana en pixeles
+
+#Espacio para dibujar
+canvas = tk.Canvas(ventana,bd = 10,bg ="black")
+canvas.pack()
+
 #Botones para las acciones
 botonArc = tk.Button(ventana,text="Arco",command=accionArc)
 botonArc.pack()
