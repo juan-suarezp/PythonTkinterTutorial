@@ -12,9 +12,6 @@ Ejemplo de ventana básico con menubutton
 #Importamos las librerías necesarias
 import tkinter as tk
 
-ventana = tk.Tk() #Ventana principal
-ventana.geometry("200x200")
-
 def fun1(): #Crea una nueva ventana
     m = tk.Tk()
     Lb = tk.Label(m, text = "Hello Option 1 clicked")
@@ -25,6 +22,9 @@ def fun1(): #Crea una nueva ventana
 def fun2():
     label = tk.Label(ventana, text = "Hello Option 2 clicked")
     label.pack()
+
+ventana = tk.Tk() #Ventana principal
+ventana.geometry("200x200")
 
 #Se crea el menubutton
 mb = tk.Menubutton(ventana , text = "Menu", relief = "raised" )
