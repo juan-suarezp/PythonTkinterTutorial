@@ -12,11 +12,11 @@ Ejemplo de ventana básico con botón que abre una ventana de mensaje
 #Importamos las librerías necesarias
 import tkinter as tk
 
-ventana = tk.Tk() #Crea la ventana principal
-ventana.geometry("200x200") #Tamaño de la ventana en pixeles
-
 def accion():
     tk.messagebox.showinfo("Título","Mensaje") #Crea la ventana del mensaje
+
+ventana = tk.Tk() #Crea la ventana principal
+ventana.geometry("200x200") #Tamaño de la ventana en pixeles
     
 #Crea el botón y lo conecta con la función
 boton = tk.Button(ventana,text="Realizar acción",command=accion)
