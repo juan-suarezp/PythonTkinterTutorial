@@ -12,6 +12,11 @@ Ejemplo de ventana básico con spinbox
 #Importamos las librerías necesarias
 import tkinter as tk
 
+def mostrar():
+    #Verifica si hay algún elemento seleccionado y lo muestra
+    if spinbox.get() != "":
+        print(spinbox.get())
+
 ventana = tk.Tk() #Crea la ventana principal
 
 #Insertar 20 elementos
@@ -23,11 +28,6 @@ for i in range(20):
 #State controla si se puede ingresar valores al spinbox por teclado
 spinbox = tk.Spinbox(ventana, values=lista, state="readonly")
 spinbox.pack()
-
-def mostrar():
-    #Verifica si hay algún elemento seleccionado y lo muestra
-    if spinbox.get() != "":
-        print(spinbox.get())
         
 #Se crea un botón y se conecta con la función
 boton = tk.Button(ventana,text="Mostrar selección",command=mostrar
