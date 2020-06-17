@@ -123,5 +123,5 @@ Tkinter cuenta con un gran número de widgets, a continuación están listados l
 - [Text.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md)
 
 ## Otros ejemplos
-- [Matplotlib.]()
-- [Eventos]()
+- [Matplotlib.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/matplotlib/matplotlib.md)
+- [Eventos.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/eventos/eventos.md)
