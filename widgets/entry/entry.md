@@ -14,6 +14,13 @@ Ejemplo de ventana básico con entry
 #Importamos las librerías necesarias
 import tkinter as tk
 
+def accion():
+    #Comprueba texto del label y del entry
+    if variable1.get() == variable.get():
+        print("Correcto")
+    else:
+        print("Incorrecto")
+
 ventana = tk.Tk() #Crea la ventana principal
 ventana.geometry("250x100")
 
@@ -27,13 +34,6 @@ variable = tk.StringVar() #Variable que guarda el texto del entry
 #Se crea el entry y se conecta con variable
 entrada = tk.Entry(ventana,textvariable=variable,bd = 5,width=20)
 entrada.pack()
-
-def accion():
-    #Comprueba texto del label y del entry
-    if variable1.get() == variable.get():
-        print("Correcto")
-    else:
-        print("Incorrecto")
 
 #Crea el botón y lo conecta con la función
 boton = tk.Button(ventana,text="Verificar",command=accion)
