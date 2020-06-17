@@ -1,3 +1,5 @@
+## Este repositorio es una guía para los estudiantes de ingeniería eléctrica que están cursando algoritmos y programación/computación numérica en la Universidad de Antioquia.
+
 # Tkinter
 Tkinter es una librería de Python que permite crear interfaz gráfica de usuario (GUI en inglés). Es la librería que viene por defecto con la instalación de Python; esto no significa que otras alternativas, como por ejemplo PyQt, sean más potentes que Tkinter.
 
@@ -119,3 +121,7 @@ Tkinter cuenta con un gran número de widgets, a continuación están listados l
 - [Scrollbar.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/scrollbar.md)
 - [Spinbox.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/spinbox/spinbox.md)
 - [Text.](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md)
+
+## Otros ejemplos
+- [Matplotlib.]()
+- [Eventos]()
