@@ -12,11 +12,11 @@ Ejemplo de ventana básico con radiobutton
 #Importamos las librerías necesarias
 import tkinter as tk
 
-ventana = tk.Tk() #Crea la ventana principal
-
 def accion():
     v = variable.get()
     print(str(v)+" Activado")
+
+ventana = tk.Tk() #Crea la ventana principal
 
 #Variable que guarda el valor del radiobutton seleccionado
 variable = tk.IntVar()
