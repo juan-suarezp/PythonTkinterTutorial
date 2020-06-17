@@ -12,8 +12,6 @@ Ejemplo de ventana básico con checkbutton
 #Importamos las librerías necesarias
 import tkinter as tk
 
-ventana = tk.Tk() #Crea la ventana principal
-
 def accion():
     v1 = variable1.get()
     v2 = variable2.get()
@@ -25,6 +23,8 @@ def accion():
         print("1 desactivado y 2 activado")
     else:
         print("1 y 2 desactivados")
+        
+ventana = tk.Tk() #Crea la ventana principal
         
 variable1 = tk.BooleanVar() #Variables que guardan el estado de los checkbutton
 variable2 = tk.BooleanVar()
