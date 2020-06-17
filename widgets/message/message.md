@@ -12,6 +12,11 @@ Ejemplo de ventana básico con message
 #Importamos las librerías necesarias
 import tkinter as tk
 
+def accion(): #Suma 1 al valor anterior del message
+    cont = int(variable.get())
+    cont = cont+1
+    variable.set(str(cont))
+
 ventana = tk.Tk() #Crea la ventana principal
 ventana.geometry("200x100")
 
@@ -24,11 +29,6 @@ variable = tk.StringVar()
 variable.set("0") #Texto inicial
 message2 = tk.Message(ventana,textvariable=variable)
 message2.pack()
-
-def accion(): #Suma 1 al valor anterior del message
-    cont = int(variable.get())
-    cont = cont+1
-    variable.set(str(cont))
     
 #Se crea el botón y se conecta con la función
 boton = tk.Button(ventana,text="Aumentar",command=accion)
