@@ -48,7 +48,6 @@ def make_plot():
     toolbar = Toolbar(canvas, framegrafica)
     toolbar.update()
     canvas.get_tk_widget().pack(expand=True, fill=tk.BOTH)
-
     sub_figure = figure.add_subplot(111)
 
     sub_figure.plot(t,v)
@@ -84,17 +83,9 @@ var_fase = tk.StringVar(value='0')
 ent_fase = tk.Entry(Frame, textvariable = var_fase)
 ent_fase.grid(column=1,row=2)
 
-boton = tk.Button(Frame, text="Graficar",command=make_plot)
+#Botón
+boton = tk.Button(Frame, text="Graficar", command=make_plot)
 boton.grid(column=2,row=1)
-
-#Frame para la gráfica 1
-framegrafica = tk.Frame(Ventana)
-framegrafica.grid(column=0, row=1)
-figure = plt.figure(figsize=(5,2))
-canvas = FigureCanvas(figure, master=framegrafica)
-toolbar = Toolbar(canvas, framegrafica)
-toolbar.update()
-canvas.get_tk_widget().pack(expand=True, fill=tk.BOTH)
 
 make_plot()
 
