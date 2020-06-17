@@ -13,6 +13,11 @@ Ejemplo de ventana básico con combobox
 import tkinter as tk
 from tkinter import ttk
 
+def mostrar():
+    #Verifica si hay algún elemento seleccionado y lo muestra
+    if combobox.get() != "":
+        print(combobox.get())
+
 ventana = tk.Tk() #Crea la ventana principal
 
 #Insertar 20 elementos
@@ -24,11 +29,6 @@ for i in range(20):
 #State controla si se puede ingresar valores al combobox por teclado
 combobox = ttk.Combobox(ventana, values=lista, state="readonly")
 combobox.pack()
-
-def mostrar():
-    #Verifica si hay algún elemento seleccionado y lo muestra
-    if combobox.get() != "":
-        print(combobox.get())
         
 #Se crea un botón y se conecta con la función
 boton = tk.Button(ventana,text="Mostrar selección",command=mostrar)
