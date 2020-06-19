@@ -19,15 +19,24 @@ Ventana = tk.Tk()
 Ventana.title("Titulo ventana")
 Ventana.geometry("320x100")
 
-Boton = tk.Button(Ventana, text='Mouse Clicks')
+#Label
+Label = tk.Label(Ventana, text='Mouse clicks en label')
+Label.pack()
+
+#Botón
+Boton = tk.Button(Ventana, text='Mouse clicks en botón')
 Boton.pack()
 
-#bind agrega conecta los eventos a los widgets
+#bind conecta los eventos a los widgets
 Boton.bind('<Button-1>', Fun1)
-Boton.bind('<Double-1>', Fun2) 
+Boton.bind('<Double-1>', Fun2)
+
+Label.bind('<Button-1>', Fun1)
+Label.bind('<Double-1>', Fun2) 
 
 Ventana.mainloop()
 
-#Para ver más eventos:
+#Para ver más eventos y ejemplos:
 #https://effbot.org/tkinterbook/tkinter-events-and-bindings.htm
+#https://www.geeksforgeeks.org/python-binding-function-in-tkinter/
 ```
