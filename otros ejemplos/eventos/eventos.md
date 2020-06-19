@@ -35,8 +35,11 @@ Label.bind('<Button-1>', Fun1)
 Label.bind('<Double-1>', Fun2) 
 
 Ventana.mainloop()
-
-#Para ver más eventos y ejemplos:
-#https://effbot.org/tkinterbook/tkinter-events-and-bindings.htm
-#https://www.geeksforgeeks.org/python-binding-function-in-tkinter/
 ```
+El resultado es el siguiente:
+
+![ventana eventos](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/eventos/ventanaeventos.png)
+
+[Aquí](https://effbot.org/tkinterbook/tkinter-events-and-bindings.htm) para ver más eventos.
+
+[Aquí](https://www.geeksforgeeks.org/python-binding-function-in-tkinter/) para ver otros ejemplos.
