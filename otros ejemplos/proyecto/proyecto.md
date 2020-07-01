@@ -1,4 +1,6 @@
 # Ejemplo Proyecto
+En este ejemplo se crea una interfaz que permite seleccionar una carpeta para listar los [archivos .lis](https://github.com/juan-suarezp/PythonTkinterTutorial/tree/master/otros%20ejemplos/proyecto) (cir0, cir1 y cir2) que hay en ella. Finalmente, es posible seleccionar uno de estos archivos para graficar en la interfaz.
+
 ```python
 # -*- coding: utf-8 -*-
 """
