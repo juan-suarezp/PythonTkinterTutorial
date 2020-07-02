@@ -1,6 +1,12 @@
 # Ejemplo Proyecto
 En este ejemplo se crea una interfaz que permite seleccionar una carpeta para listar los [archivos .lis](https://github.com/juan-suarezp/PythonTkinterTutorial/tree/master/otros%20ejemplos/proyecto) (cir0, cir1 y cir2) que hay en ella. Finalmente, es posible seleccionar uno de estos archivos para graficar en la interfaz.
 
+`Nota:` para descargar los archivos .lis, ingresar al archivo que quiere descargar.
+
+![imagen archivo](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/proyecto/imagenarchivo.png)
+
+Dar click derecho al botón `Raw` y después "guardar como..." o "guardar enlace como...". Esto permite descargar los archivos.
+
 ```python
 # -*- coding: utf-8 -*-
 """
@@ -50,10 +56,10 @@ class main(tk.Tk):
         #Frame para lista y barra de desplazamiento
         framelista = tk.Frame(self)
         framelista.grid(column=0, row=1, rowspan=3, sticky="NESW")
-        #Barra de deslizamiento con orientación vertical
+        #Barra de desplazamiento con orientación vertical
         scrollbar = tk.Scrollbar(framelista, orient=tk.VERTICAL)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y) #Ubicarla a la derecha
-        #Crear la lista y vincular con la barra de deslizamiento
+        #Crear la lista y vincular con la barra de desplazamiento
         self.listbox = tk.Listbox(framelista, yscrollcommand=scrollbar.set,
                                   selectmode="single", height=29, width=32)
         scrollbar.config(command=self.listbox.yview)
