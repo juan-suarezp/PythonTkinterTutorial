@@ -7,6 +7,8 @@ En este ejemplo se crea una interfaz que permite seleccionar una carpeta para li
 
 Dar click derecho al botón `Raw` y después "guardar como..." o "guardar enlace como...". Esto permite descargar los archivos.
 
+## Ejemplo
+
 ```python
 # -*- coding: utf-8 -*-
 """
@@ -71,20 +73,22 @@ class main(tk.Tk):
         #Frame para la gráfica 1
         framegrafica1 = tk.Frame(self)
         framegrafica1.grid(column=1, row=1, columnspan=2, sticky="NESW")
-        self.figure1 = plt.figure(num=1, figsize=(6,2))
-        self.canvas1 = FigureCanvas(self.figure1, master=framegrafica1)
+        figure1 = plt.figure(num=1, figsize=(6,2))
+        self.canvas1 = FigureCanvas(figure1, master=framegrafica1)
         toolbar1 = Toolbar(self.canvas1, framegrafica1)
         toolbar1.update()
         self.canvas1.get_tk_widget().pack(expand=True, fill=tk.BOTH)
+        self.ax1 = figure1.add_subplot(111)
         
         #Frame para la gráfica 2
         framegrafica2 = tk.Frame(self)
         framegrafica2.grid(column=1, row=2, columnspan=2, sticky="NESW")
-        self.figure2 = plt.figure(num=2, figsize=(6,2))
-        self.canvas2 = FigureCanvas(self.figure2, master=framegrafica2)
+        figure2 = plt.figure(num=2, figsize=(6,2))
+        self.canvas2 = FigureCanvas(figure2, master=framegrafica2)
         toolbar2 = Toolbar(self.canvas2, framegrafica2)
         toolbar2.update()
         self.canvas2.get_tk_widget().pack(expand=True, fill=tk.BOTH)
+        self.ax2 = figure2.add_subplot(111)
         
         #Cambiar tamaño de filas y columnas de la grid con cambio en ventana
         self.grid_columnconfigure(0, weight=0) #Columna 0 no cambia de tamaño
@@ -206,17 +210,16 @@ class main(tk.Tk):
                 if i>=n:
                     Vrms.append(self.valorRMS(v[i-n:i]))
             
-            #Grafica la señal
-            ax1 = self.figure1.add_subplot(111)
             #Descarta la gráfica anterior
-            ax1.cla()
-            ax1.plot(t, v, label="Voltage signal")
-            ax1.plot(t[n:], Vrms, label="Voltage RMS")
-            ax1.set_title("Voltage vs Time")
-            ax1.set_xlabel("Time (s)") #
-            ax1.set_ylabel("Voltage (V)")
-            ax1.grid(True)
-            ax1.legend(loc="best")
+            self.ax1.cla()
+            #Grafica la señal
+            self.ax1.plot(t, v, label="Voltage signal")
+            self.ax1.plot(t[n:], Vrms, label="Voltage RMS")
+            self.ax1.set_title("Voltage vs Time")
+            self.ax1.set_xlabel("Time (s)") #
+            self.ax1.set_ylabel("Voltage (V)")
+            self.ax1.grid(True)
+            self.ax1.legend(loc="best")
             self.canvas1.draw()
             
             #Encuentra tiempo caída de tensión
@@ -231,19 +234,18 @@ class main(tk.Tk):
                     y2 = i
                     break
             
-            #Grafica la parte de la caída en la señal
-            ax2 = self.figure2.add_subplot(111)
             #Descarta la gráfica anterior
-            ax2.cla()
-            ax2.plot(t[y1-n*2:y2+n*3], v[y1-n*2:y2+n*3],
+            self.ax2.cla()
+            #Grafica la parte de la caída en la señal
+            self.ax2.plot(t[y1-n*2:y2+n*3], v[y1-n*2:y2+n*3],
                      label="Voltage signal")
-            ax2.plot(t[n+y1-n*2:y2+n*3+n], Vrms[y1-n*2:y2+n*3],
+            self.ax2.plot(t[n+y1-n*2:y2+n*3+n], Vrms[y1-n*2:y2+n*3],
                      label="Voltage RMS")
-            ax2.set_title("Voltage vs Time")
-            ax2.set_xlabel("Time (s)") #
-            ax2.set_ylabel("Voltage(V)")
-            ax2.grid(True)
-            ax2.legend(loc="best")
+            self.ax2.set_title("Voltage vs Time")
+            self.ax2.set_xlabel("Time (s)") #
+            self.ax2.set_ylabel("Voltage(V)")
+            self.ax2.grid(True)
+            self.ax2.legend(loc="best")
             self.canvas2.draw()
         except:
             pass
