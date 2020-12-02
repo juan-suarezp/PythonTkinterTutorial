@@ -4,7 +4,7 @@
 Tkinter es una librería de Python que permite crear interfaz gráfica de usuario (GUI en inglés). Es la librería que viene por defecto con la instalación de Python; esto no significa que otras alternativas, como por ejemplo [PyQt](https://github.com/juan-suarezp/PythonPyQtTutorial), sean más potentes que Tkinter.
 
 ## GUI con Tkinter
-El primer paso para crear una GUI es crear la ventana principal como se muestra en el siguiente código:
+El primer paso para crear una GUI es crear la ventana principal (`Tk`), como se muestra en el siguiente código:
 
 ```python
 import tkinter as tk
@@ -17,7 +17,7 @@ El resultado es el siguiente:
 
 ![Ventana Tkinter](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventana.png)
 
-Un programa solo puede tener una `Tk`, debido a que es la raiz del programa y el primer widget que se debe crear; por lo tanto, cerrar la `Tk` cerraría la GUI. Existen otro tipo de ventanas llamadas `Toplevel` que son ventanas de la aplicación, la diferencia con la `Tk` es que al cerrar una ventana `Toplevel` destruirá todos los widgets secundarios colocados en esa ventana pero no cerrará el programa. 
+Una aplicación solo puede tener una `Tk`, debido a que es la raiz del programa y el primer widget que se debe crear; por lo tanto, cerrar la `Tk` cerraría la GUI. Existen otro tipo de ventanas llamadas `Toplevel` que son ventanas de la aplicación, la diferencia con la `Tk` es que al cerrar una ventana `Toplevel` destruirá todos los widgets secundarios colocados en esa ventana pero no cerrará el programa. Es importante resaltar que, además de la `Tk` y las ventanas `Toplevel`, existen algunas ventanas predeterminadas como las de [Filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/filedialog.md) o las de [Messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/messagebox.md) y otros widgets como los [Frames](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md) y [Labelframes](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/labelframe/labelframe.md) que sirven como contenedores de otros widgets.
 
 Una vez se tiene la ventana principal, lo siguiente es agregar los botones, entradas, labels y demás widgets que necesitemos. Para esto, Tkinter cuenta con tres mecanismos para gestionar la geometría de los widgets de nuestra GUI: los métodos `pack()`, `grid()` y `place()`.
 
