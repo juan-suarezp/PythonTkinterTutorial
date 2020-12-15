@@ -228,6 +228,6 @@ boton.grid(column=2,row=1)
 
 make_plot()
 
-Ventana.mainloop()
+ventana.mainloop()
 ```
 En el final del código se define la ventana principal y los widgets que están en ella. Se usan widgets como label (ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)), entry (ver [Tkinter Entry](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/entry.md)), button (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) y frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)).
