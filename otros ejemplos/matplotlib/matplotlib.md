@@ -195,39 +195,49 @@ Cabe resaltar que se crea una "subfigura" del objeto tipo figura de matplotlib y
 ventana = tk.Tk() #Ventana principal
 ventana.title("Crear gráfica!")
 
-Frame = tk.Frame(Ventana) #Frame para agregar los entry y el botón
-Frame.grid(row=0, column=0)
+# Frame para agregar los entry y el botón
+fr_datos_entrada = tk.Frame(ventana) 
+fr_datos_entrada.grid(row=0, column=0)
 
-#Amplitud
-lbl_ampl = tk.Label(Frame, text="Amplitud [V]: ")
+# Amplitud
+lbl_ampl = tk.Label(fr_datos_entrada, text="Amplitud [V]: ")
 lbl_ampl.grid(column=0,row=0)
 
 var_ampl = tk.StringVar(value='100')
-ent_ampl = tk.Entry(Frame, textvariable = var_ampl)
+ent_ampl = tk.Entry(fr_datos_entrada, textvariable = var_ampl)
 ent_ampl.grid(column=1,row=0)
 
-#Frecuencia
-lbl_frec = tk.Label(Frame, text="Frecuencia [Hz]: ")
+# Frecuencia
+lbl_frec = tk.Label(fr_datos_entrada, text="Frecuencia [Hz]: ")
 lbl_frec.grid(column=0,row=1)
 
 var_frec = tk.StringVar(value='60')
-ent_frec = tk.Entry(Frame, textvariable = var_frec)
+ent_frec = tk.Entry(fr_datos_entrada, textvariable = var_frec)
 ent_frec.grid(column=1,row=1)
 
-#Fase inicial
-lbl_fase = tk.Label(Frame,text="Fase inical [rad]: ")
+# Fase inicial
+lbl_fase = tk.Label(fr_datos_entrada,text="Fase inical [rad]: ")
 lbl_fase.grid(column=0,row=2)
 
 var_fase = tk.StringVar(value='0')
-ent_fase = tk.Entry(Frame, textvariable = var_fase)
+ent_fase = tk.Entry(fr_datos_entrada, textvariable = var_fase)
 ent_fase.grid(column=1,row=2)
 
-#Botón
-boton = tk.Button(Frame, text="Graficar", command=make_plot)
+# Botón graficar
+boton = tk.Button(fr_datos_entrada, text="Graficar", command=make_plot)
 boton.grid(column=2,row=1)
 
+# Llamo la función donde creo el resto de objetos y calculo los puntos 
 make_plot()
 
+# Opcional
+# Para mantener la ventana de un tamaño fijo
+# Fuente: https://stackoverflow.com/questions/10448882/how-do-i-set-a-minimum-window-size-in-tkinter
+ventana.update()
+ventana.minsize(ventana.winfo_width(), ventana.winfo_height())
+ventana.maxsize(ventana.winfo_width(), ventana.winfo_height())
+
+# Ejecuto la aplicación
 ventana.mainloop()
 ```
 En el final del código se define la ventana principal y los widgets que están en ella. Se usan widgets como label (ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)), entry (ver [Tkinter Entry](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/entry.md)), button (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) y frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)).
