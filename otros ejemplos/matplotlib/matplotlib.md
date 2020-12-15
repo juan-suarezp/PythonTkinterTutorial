@@ -192,8 +192,8 @@ Cabe resaltar que se crea una "subfigura" del objeto tipo figura de matplotlib y
 
 ```python
 # Construcción de la ventana y sus controles
-Ventana = tk.Tk() #Ventana principal
-Ventana.title("Crear gráfica!")
+ventana = tk.Tk() #Ventana principal
+ventana.title("Crear gráfica!")
 
 Frame = tk.Frame(Ventana) #Frame para agregar los entry y el botón
 Frame.grid(row=0, column=0)
