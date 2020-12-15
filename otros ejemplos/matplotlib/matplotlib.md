@@ -191,6 +191,7 @@ Finalmente, en la parte `#Gráfica`, se crea un objeto tipo figura de matplotlib
 Cabe resaltar que se crea una "subfigura" del objeto tipo figura de matplotlib y finalmente es en este objeto que se ejecuta el comando `plot(t,v)` y demás cambios que se quieran realizar a la gráfica, como por ejemplo cambiar el título, los títulos de los ejes, etc.
 
 ```python
+# Construcción de la ventana y sus controles
 Ventana = tk.Tk() #Ventana principal
 Ventana.title("Crear gráfica!")
 
