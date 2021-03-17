@@ -14,7 +14,10 @@ import tkinter as tk
 
 def accion():
     v = variable.get()
-    print(str(v)+" Activado")
+    if v == 0:
+        print("Desactivados")
+    else:
+        print(str(v)+" Activado")
 
 ventana = tk.Tk() #Crea la ventana principal
 
