@@ -1,5 +1,5 @@
 # Tkinter Spinbox
-El widget spinbox permite guardar un grupo de opciones y seleccionar solo una de ellas. Es posible configurar el spinbox para que permite ingresar una opción por teclado.
+El widget spinbox permite guardar un grupo de opciones y seleccionar solo una de ellas. Es posible configurar el spinbox para que permita ingresar una opción por teclado.
 
 ## Ejemplo
 
