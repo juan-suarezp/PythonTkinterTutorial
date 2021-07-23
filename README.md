@@ -127,5 +127,3 @@ Tkinter cuenta con un gran número de widgets, a continuación están listados l
 - [Eventos](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/eventos/eventos.md)
 - [Ejemplo Proyecto](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/proyecto/proyecto.md)
 - [Ejemplo Figura 3D](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/3D/3D.md)
-
-[![Watch the video](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventanaplace.png)](https://youtu.be/vt5fpE0bzSY)
