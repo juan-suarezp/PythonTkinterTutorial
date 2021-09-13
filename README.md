@@ -72,7 +72,7 @@ Este método permite ubicar los widgets indicando la fila y la columna. Por defe
 [Aquí](https://www.tutorialspoint.com/python/tk_grid.htm) para ver más sobre el método grid.
 
 ### Place
-Este mecanismo para gestionar la geometría de los widgets permite ubicarlos en una posición específica en el widget principal. continuando con el ejemplo anterior:
+Este mecanismo para gestionar la geometría de los widgets permite ubicarlos en una posición específica en el widget principal. Continuando con el ejemplo anterior:
 
 ```python
 import tkinter as tk
